@@ -50,3 +50,9 @@ _data
 
 # PostgreSQL
 logfile
+
+#IDE
+
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml

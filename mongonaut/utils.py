@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from mongoengine.base import ObjectIdField, ValidationError
+from mongoengine.base import ObjectIdField
 from mongoengine.fields import ReferenceField
+
 
 # Used to validate object_ids.
 # Called by is_valid_object_id
@@ -13,7 +14,7 @@ def is_valid_object_id(value):
     try:
         OBJECT_ID.validate(value)
         return True
-    except ValidationError:
+    except:
         return False
 
 
